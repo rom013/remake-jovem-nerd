@@ -1,0 +1,227 @@
+@media only screen and (max-width: 1200px){
+	#main .container-news{
+		padding: 50px 40px;
+	}
+}
+@media only screen and (max-width: 1100px){
+	.grade-noticias{
+		margin: 0 20px;
+	}
+	.container-noticias{
+		gap: 24px 8px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.card{
+		width: 100%;
+	}
+	#main, .info-footer{
+		margin: 64px 20px;
+	}
+	.box-conteudo{
+		padding: 8px;
+	}
+	.a1{
+		display: none;
+	}
+
+}
+
+/* tablet */
+@media only screen and (max-width: 900px){
+	.header-top{
+		justify-content: space-between;
+	}
+	.btn-search, .menu-hamburguer, .menu-mobile{
+		display: flex;
+	}
+	.container-noticias{
+		grid-template-columns: repeat(2,1fr);
+	}
+	body > header{
+		height: 116px;
+		/* padding-top: 24px; */
+		justify-content: center;
+	}
+	.menu-mobile header{
+		margin-top: 0;
+	}
+	nav{
+		display: none;
+	}
+	.logo a { /*isso faz a imagem ocupar o espaço da div*/
+		height: inherit;
+		width: 100%;
+		display: block;
+		background-image: url(../assets/image/logo-jovemnerd-horizontal.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+	.destaque-lista{
+		font-size: 12px
+	}
+	.card{
+		width: 100%;
+		height: auto;
+	}
+	.menu-mobile ul li{
+		text-align: center;
+	}
+	.menu-mobile .list-links-menu{
+		list-style: none;
+		margin-top: 16px;
+	}
+	.menu-mobile .list-links-menu a{
+		color: #fff;
+		width: 100%;
+		display: inline-block;
+	}
+	.menu-mobile .list-links-menu a:visited{
+		color: #fff;
+	}
+	.menu-mobile li{
+		border-top: 1px solid #fff;
+		padding: 16px 8px;
+	}
+	.menu-mobile li:first-child{
+		border: none;
+	}
+	.nerd-cast-title div{
+		margin: 0 0 32px 10%;
+	}
+	.campo-busca, .area-conteudo-2, .grade-noticias,
+	.categorias, .data-time, .share{
+		display: none;
+	}
+	.container-criticas{
+		margin: 0 24px;
+	}
+	.nerd-cast-title a{
+		margin-right: 24px;
+	}
+	.info-footer{
+		flex-wrap: wrap;
+	}
+}
+
+
+/* mobile */
+@media only screen and (max-width: 580px){
+	body{
+		background: #F2F2F2;
+	}
+	body > header{
+		height: 116px;
+		justify-content: center;
+	}
+	.logo{
+		width: 120px;
+		height: 32px;
+	}
+	nav{
+		display: none;
+	}
+	.campo-busca, .area-conteudo-2, .grade-noticias,
+	.categorias, .descricao, .data-time, .share, .nerd-cast, 
+	.descricao-noticia, .desktop{
+		display: none;
+	}
+	.container-noticias, #main{
+		margin: 0;
+		background: #F2F2F2;
+	}
+	.menu-mobile header{
+		margin-top: 32px;
+	}
+	#main .container-news{
+		padding: 50px 24px;
+	}
+	.ultimas-noticias{
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		row-gap: 24px;
+	}
+	.card{
+		width: 100%;
+		height: auto;
+	}
+	.ultimas-noticias .card img{
+		height: auto;
+		border-radius: 8px;
+	}
+	.slide-noticias{
+		overflow: hidden;
+		display: block;
+	}
+	
+	.banner-card{
+		height: 100%;
+	}
+	.banner-card img{
+		object-fit: cover;
+	}
+	
+
+	.ultimas-noticias .titulo-card {
+		width: 100%;
+		position: relative;
+		background: none;
+		color: #000;
+		padding: 0;
+		font-size: 12px;
+		font-weight: 800;
+		height: auto;
+		font-family: "Lato", sans-serif;
+	}
+	.em-alta-faixa{
+		display: block;
+	}
+	.container-news h2{
+		font-size: 24px;
+		margin-top: 0;
+	}
+	.area-noticia{
+		margin: 12px 0;
+	}
+	.titulo-noticia{
+		font-size: 12px;
+	}
+	.imagem-noticia {
+		max-width: 140px;
+		height: 100%;
+		border-radius: 8px 0 0 8px;
+	}
+	.container-newnoticias {
+		padding: 0 16px 0 0;
+		gap: 8px;
+		min-height: 100px;
+		height: auto;
+	}
+
+	.banner-categoria{
+		border-top-right-radius: 0;
+	}
+	.container-criticas{
+		overflow: auto;
+	}
+	.nerd-cast-title h3{
+		font-size: 20px;
+	}
+	.card-criticas{
+		min-width: 160px;
+	}
+
+	#footer{
+		padding: 40px 0;
+	}
+	#footer .logo{
+		display: flex;
+	}
+	.info-footer .title{
+		font-size: 16px;
+	}
+
+	.info-footer ul li{
+		font-size: 12px;
+	}
+
+}

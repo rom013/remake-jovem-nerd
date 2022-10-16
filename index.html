@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Notícias sobre filmes, séries, HQs, games, animes, ciência, tecnologia e humor, porque rir não faz mal a ninguém!">
+
+	<title>Jovem Nerd - Notícias sobre filmes, séries, HQs, games, animes, ciência, tecnologia e humor, porque rir não faz mal a ninguém!</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">	
+	<link rel="stylesheet" href="css/darkMode.css">	
+
+
+	<link rel="shortcut icon" href="assets/image/icon_logo.ico" type="image/x-icon">
+	<!-- icone da aba -->
+	
+	<!-- Link para conseguir inserir fontes do google fonts na pagina -->
+	<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;800&display=swap" rel="stylesheet">
+	<!-- Link para conseguir inserir fontes do google fonts na pagina -->
+
+	<!-- <script src="https://kit.fontawesome.com/1faa20ab11.js" crossorigin="anonymous"></script> -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<!-- Link para conseguir inserir os icones na pagina -->
+</head>
+
+<body>
+	<header class="main-header">
+		<div class="header-top">
+			<div class="menu-hamburguer">
+				<span class="bar1"></span>
+			</div>
+			<div class="logo">
+				<a href="/" title="logo"> </a>
+			</div>
+			<button type="button" class="btn-search">
+				<span class="material-symbols-outlined icons-google">search</span>
+			</button>
+		</div>
+		<nav>
+			<!-- nav=navegação -->
+			<ul class="lista-links">
+				<li class="destaque-lista">
+					<a href="#" class="anchor-nav">NerdOffice</a>
+				</li>
+				<li class="destaque-lista">
+					<a href="#" class="anchor-nav">NerdCast</a>
+				</li>
+				<li class="destaque-lista">
+					<a href="#" class="anchor-nav">NerdPlayer</a>
+				</li>
+				<li class="destaque-lista">
+					<a href="#" class="anchor-nav">DeseKaixa</a>
+				</li>
+				<li class="destaque-lista drop-down">
+					<span>Mais 
+						<div>
+							<span class="material-symbols-outlined icons-google">arrow_drop_down</span></span>
+						</div>
+					<div class="drop-down-child">
+						<a href="#">Sr. K</a>
+						<a href="#">Nerdologia</a>
+						<a href="#">The Last of Us</a>
+						<a href="#">A Casa do Dragão</a>
+						<a href="#">A Casa do Dragão</a>
+						<a href="#">God of War</a>
+						<a href="#">Lá do Bunker</a>
+					</div>
+				</li>
+				<li class="destaque-lista">
+					<a href="#" class="anchor-nav">Anuncie</a>
+				</li>
+				<li class="a1">
+					<div class="campo-busca">
+						<input type="text" placeholder="Ex.: Filmes">
+						<button type="button" class="button-search">
+							<!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+							<span class="material-symbols-outlined icons-google">search</span>
+						</button>
+					</div>
+				</li>
+				<li>
+					<button type="button" class="btn-dark-mode" id="btn-dark-mode">
+						<!-- <i class="fa-sharp fa-solid fa-circle-half-stroke"></i> -->
+						<span class="material-symbols-outlined icons-google">light_mode</span>
+					</button>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- 
+		area menu mobile 
+	-->
+
+	<section class="principais-noticias">
+		<div class="grade-noticias">
+			<div class="coluna-grade b1 box">
+				<div class="box-conteudo">
+					<span class="titulo-conteudo">
+						E JÁ TEM DATA!
+					</span>
+					<span>
+						Deadpool 3 terá Hugh Jackman de volta como Wolverine
+					</span>
+				</div>
+				<img src="assets/image/main_news/deadpool_tera_hugh_jackman_como_wolverine.webp" alt="E JÁ TEM DATA!">
+			</div>
+			<div class="coluna-grade">
+				<div class="box">
+					<div class="box-conteudo">
+						<span class="titulo-conteudo">
+							DESCANSE EM PAZ
+						</span>
+						<span>
+							Robbie Coltrane, ator de Hagrid em Harry Potter, morre aos 72 anos
+						</span>
+					</div>
+					<img src="assets/image/main_news/hagrid_morre_robbie_coltrane.webp" alt="DESCANSE EM PAZ">
+				</div>
+				<div class="box">
+					<div class="box-conteudo">
+						<span class="titulo-conteudo">
+							LÁ DO BUNKER 65
+						</span>
+						<span>
+							Carreta Mad Max
+						</span>
+					</div>
+					<img src="assets/image/main_news/laDoBunker65_CarretaMadMax.webp" alt="LÁ DO BUNKER 65">
+				</div>
+			</div>
+			<aside class="em-alta">
+				<span class="titulo-em-alta">Em alta</span>
+				<ol class="lista-em-alta">
+					<li>Cena emocionante de A Casa de Dragão foi improvisada por Matt Smith</li>
+					<li>Damon Wayans e Damon Wayans Jr. serão pai e filho em nova comédia</li>
+					<li>Brendan Fraser diz que toparia fazer mais um A Múmia e detona reboot com Tom Cruise</li>
+					<li>Anime de Bleach não está confirmado para o Disney Plus da América Latina</li>
+					<li>The Boys revela novas Supers para a quarta temporada</li>
+				</ol>
+			</aside>
+		</div>
+
+		<div class="slide-noticias">
+			<h3 class="main-titulo">Principais notícias</h3>
+			<div>
+				<div class="card">
+					<div class="banner-card">
+						<img src="assets/image/main_news/deadpool_tera_hugh_jackman_como_wolverine.webp" alt="Deadpool 3 terá Hugh Jackman de volta como Wolverine">
+						<div class="titulo-card">
+							<span>
+								Deadpool 3 terá Hugh Jackman de volta como Wolverine
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="banner-card">
+						<img src="assets/image/main_news/hagrid_morre_robbie_coltrane.webp" alt="Robbie Coltrane, ator de Hagrid em Harry Potter, morre aos 72 anos">
+						<div class="titulo-card">
+							<span>
+								Robbie Coltrane, ator de Hagrid em Harry Potter, morre aos 72 anos
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="banner-card">
+						<img src="assets/image/main_news/laDoBunker65_CarretaMadMax.webp" alt="Carreta Mad Max">
+						<div class="titulo-card">
+							<span>
+								Carreta Mad Max
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<main id="main">
+		<div class="container-news">
+			<h3 class="main-titulo">
+				Últimas notícias
+			</h3>
+			<div class="container-noticias ultimas-noticias">
+
+				<div class="card">
+					<div class="banner-card">
+						<img src="assets/image/latest_news/latest_news_spider.png" alt="Spider-Man: Miles Morales para PC ganha data de lançamento">
+						<div class="titulo-card">
+							<span>
+								Spider-Man: Miles Morales para PC ganha data de lançamento
+							</span>
+						</div>
+					</div>
+					<span class="descricao">
+						Spider-Man: Miles Morales, o derivado do game do Homem-Aranha, não vai demorar nada para chegar ao PC
+					</span>
+				</div>
+				<div class="card">
+					<div class="banner-card">
+						<img src="assets/image/latest_news/latest_news_egocentricas.png" alt="As Egocêntricas Maldições de Souichi, de Junji Ito, chega ao Brasil em outubro">
+						<div class="titulo-card">
+							<span>
+								As Egocêntricas Maldições de Souichi, de Junji Ito, chega ao Brasil em outubro
+							</span>
+						</div>
+					</div>
+					<span class="descricao">
+						Pipoca e Nanquim reúne histórias focadas em Souichi, jovem que acredita lançar maldições
+					</span>
+				</div>
+				<div class="card">
+					<div class="banner-card">
+						<img src="assets/image/latest_news/latest_news_samurai.png" alt="Netflix divulga primeiras imagens do anime de Onimusha">
+						<div class="titulo-card">
+							<span>
+								Netflix divulga primeiras imagens do anime de Onimusha
+							</span>
+						</div>
+					</div>
+					<span class="descricao">
+						Produção é inspirada na franquia de jogos da Capcom
+					</span>
+				</div>
+				<div class="card">
+					<div class="banner-card">
+						<img src="assets/image/latest_news/latest_news_therock.png" alt="Adão Negro é um filme bagunçado, mas divertido">
+						<div class="titulo-card">
+							<span>
+								Adão Negro é um filme bagunçado, mas divertido
+							</span>
+						</div>
+					</div>
+					<span class="descricao">
+						Alguns representantes da imprensa internacional já assistiram Adão Negro (Black Adam, em inglês) e a resposta geral é positiva.
+					</span>
+				</div>
+				<div class="card">
+					<div class="banner-card">
+						<img src="assets/image/latest_news/latest_news_2.png" alt="E3 confirma datas da edição presencial em 2023">
+						<div class="titulo-card">
+							<span>
+								E3 confirma datas da edição presencial em 2023
+							</span>
+						</div>
+					</div>
+					<span class="descricao">
+						Após um 2022 conturbado, a E3 retorna em formato presencial no ano que vem, sob nova direção. 
+					</span>
+				</div>
+				<div class="card">
+					<div class="banner-card">
+						<img src="assets/image/latest_news/latest_news_live.png" alt="Live-action de A Pequena Sereia ganha cartaz com Ariel">
+						<div class="titulo-card">
+							<span>
+								Live-action de A Pequena Sereia ganha cartaz com Ariel
+							</span>
+						</div>
+					</div>
+					<span class="descricao">
+						Personagem será vivida por Halle Bailey em filme que chega no ano que vem
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="faixa">
+			<!-- desktop -->
+			<div class="nerd-cast">
+				<div class="nerd-cast-title">
+					<div>
+						<h3>NerdCast</h3>
+						<span>Novos podcasts toda sexta</span>
+					</div>
+					<a href="https://jovemnerd.com.br/nerdcast/">Ver mais</a>
+				</div>
+
+				<div class="slide-nerdCast">
+					<div class="btn-nav btnLeft">
+						<!-- <i class="fa-solid fa-chevron-left"></i> -->
+						<span class="material-symbols-outlined icons-google">arrow_back_ios_new</span>
+					</div>
+					<div class="slide-container">
+						<div class="scroll-slide">
+							<div class="slide">
+								<img src="assets/image/nerd_cast/NerdCast_bunker.webp" alt="Lá do Bunker 63 Pensando em baleias">
+								<div class="titulo-card">
+									<span>Lá do Bunker 63 Pensando em baleias</span>
+								</div>
+							</div>
+							<div class="slide">
+								<img src="assets/image/nerd_cast/NerdCast_caneca.webp" alt="Caneca de Mamicas 73 Cheias de manias">
+								<div class="titulo-card">
+									<span>Caneca de Mamicas 73 Cheias de manias</span>
+								</div>
+							</div>
+							<div class="slide">
+								<img src="assets/image/nerd_cast/NerdCast_saude.webp" alt=">NerdCast 848 Saúde do sono no mundo da insônia">
+								<div class="titulo-card">
+									<span>NerdCast 848 Saúde do sono no mundo da insônia</span>
+								</div>
+							</div>
+							<div class="slide">
+								<img src="assets/image/nerd_cast/NerdCast_canecam.webp" alt="Caneca de Mamicas 75 Quem procura cura">
+								<div class="titulo-card">
+									<span>Caneca de Mamicas 75 Quem procura cura</span>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+					<div class="btn-nav btnRight">
+						<!-- <i class="fa-solid fa-chevron-right"></i> -->
+						<span class="material-symbols-outlined icons-google">arrow_forward_ios</span>
+					</div>
+				</div>
+			</div>
+			<!-- mobile -->
+			<div class="em-alta-faixa">
+				<h3>Em alta</h3>
+
+				<ul>
+					<li>Cena emocionante de A Casa de Dragão foi improvisada por Matt Smith</li>
+					<li>Damon Wayans e Damon Wayans Jr. serão pai e filho em nova comédia</li>
+					<li>Brendan Fraser diz que toparia fazer mais um A Múmia e detona reboot com Tom Cruise</li>
+					<li>Anime de Bleach não está confirmado para o Disney Plus da América Latina</li>
+					<li>The Boys revela novas Supers para a quarta temporada</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="container-news">
+			<div class="categorias">
+				<div class="titulo-categorias">
+					<span>
+						Categorias
+					</span>
+				</div>
+				<a href="#" class="movie">Filmes</a>
+				<a href="#" class="serie">Séries e TV</a>
+				<a href="#" class="game">Games</a>
+				<a href="#" class="HQ">HQs livros</a>
+				<a href="#" class="anime">Animes e Mangás</a>
+				<a href="#" class="science">Ciencia e tecnologia</a>
+				<a href="#" class="etc">ETC</a>
+			</div>
+			<h2>Mais notícias</h2>
+			<div class="conteudos">
+				<!-- inicio noticias principais -->
+				<div class="area-conteudo-1">
+					<div class="container-newnoticias">
+						<div class="imagem-noticia">
+							<div class="banner-categoria game">Games</div>
+							<img src="assets/image/more_news/News_minecraft.webp" alt='Minecraft e seus derivados ganham novidades em transmissão ao vivo'>
+						</div>
+						<div class="area-noticia">
+							<p class="titulo-noticia">
+								Minecraft e seus derivados ganham novidades em transmissão ao vivo
+							</p>
+							<p class="descricao-noticia">
+								Evento digital apresentou atualizações para o game principal, e também novidades para Minecraft Dungeons e Minecraft Legends
+							</p>
+							<div class="data-time">15 de out. 2022</div>
+							<div title="compartilhar" class="share">
+								<span class="material-symbols-outlined icons-google">share</span>
+							</div>
+						</div>
+					</div>
+					<div class="container-newnoticias">
+						<div class="imagem-noticia">
+							<div class="banner-categoria game">Games</div>
+							<img src="assets/image/more_news/News_pokemon.webp" alt="Scarlet e Violet anuncia Bellibolt, novo Pokémon elétrico">
+						</div>
+						<div class="area-noticia">
+							<p class="titulo-noticia">
+								Scarlet e Violet anuncia Bellibolt, novo Pokémon elétrico
+							</p>
+							<p class="descricao-noticia">
+								Novo monstrinho expande e contrai o corpo para gerar eletricidade
+							</p>
+							<div class="data-time">14 out. 2022</div>
+							<div title="compartilhar" class="share">
+								<span class="material-symbols-outlined icons-google">share</span>
+							</div>
+						</div>
+					</div>
+					<div class="container-newnoticias">
+						<div class="imagem-noticia">
+							<div class="banner-categoria HQ">HQs e Livros</div>
+							<img src="assets/image/more_news/News_sonic.webp" alt="SEGA revela capa de Sonic Frontiers Prologue: Convergence, HQ prelúdio do jogo">
+						</div>
+						<div class="area-noticia">
+							<p class="titulo-noticia">
+								SEGA revela capa de Sonic Frontiers Prologue: Convergence, HQ prelúdio do jogo
+							</p>
+							<p class="descricao-noticia">
+								Primeira parte do projeto será lançada em 18 de outubro
+							</p>
+							<div class="data-time">14 out. 2022</div>
+							<div title="compartilhar" class="share">
+								<span class="material-symbols-outlined icons-google">share</span>
+							</div>
+						</div>
+					</div>
+					<div class="container-newnoticias">
+						<div class="imagem-noticia">
+							<div class="banner-categoria game">Games</div>
+							<img src="assets/image/more_news/News_171.webp" alt="Jogo 171 é o GTA brasileiro que você sempre sonhou - confira o trailer">
+						</div>
+						<div class="area-noticia">
+							<p class="titulo-noticia">
+								Jogo 171 é o GTA brasileiro que você sempre sonhou - confira o trailer
+							</p>
+							<p class="descricao-noticia">
+								Game nacional entra em alpha antecipado na Steam em novembro
+							</p>
+							<div class="data-time">14 out. 2022</div>
+							<div title="compartilhar" class="share">
+								<span class="material-symbols-outlined icons-google">share</span>
+							</div>
+						</div>
+					</div>
+					<div class="container-newnoticias">
+						<div class="imagem-noticia">
+							<div class="banner-categoria anime">Animes e Mangás</div>
+							<img src="assets/image/more_news/News_Junji.webp" alt="Junji Ito: Histórias Macabras do Japão ganha data de estreia em cartaz sinistro">
+						</div>
+						<div class="area-noticia">
+							<p class="titulo-noticia">
+								Junji Ito: Histórias Macabras do Japão ganha data de estreia em cartaz sinistro
+							</p>
+							<p class="descricao-noticia">
+								Anime baseado em histórias do mangaká chega em janeiro
+							</p>
+							<div class="data-time">14 out. 2022</div>
+							<div title="compartilhar" class="share">
+								<span class="material-symbols-outlined icons-google">share</span>
+							</div>
+						</div>
+					</div>
+					<div class="container-newnoticias">
+						<div class="imagem-noticia">
+							<div class="banner-categoria HQ">HQs e Livros</div>
+							<img src="assets/image/more_news/News_monica.webp" alt="Turma da Mônica terá personagem com nanismo em nova HQ">
+						</div>
+						<div class="area-noticia">
+							<p class="titulo-noticia">
+								Turma da Mônica terá personagem com nanismo em nova HQ
+							</p>
+							<p class="descricao-noticia">
+								Evento de lançamento acontece dia 25 de outubro na idade de São Paulo
+							</p>
+							<div class="data-time">14 out. 2022</div>
+							<div title="compartilhar" class="share">
+								<span class="material-symbols-outlined icons-google">share</span>
+							</div>
+						</div>
+					</div>
+					<div class="container-newnoticias">
+						<div class="imagem-noticia">
+							<div class="banner-categoria game">Games</div>
+							<img src="assets/image/more_news/News_dontnod.webp" alt="Don't Nod tem oito jogos em desenvolvimento para os próximos 3 anos">
+						</div>
+						<div class="area-noticia">
+							<p class="titulo-noticia">
+								Don't Nod tem oito jogos em desenvolvimento para os próximos 3 anos
+							</p>
+							<p class="descricao-noticia">
+								Entre os projetos, estão parcerias com a Focus Entertainment, Studio Tolima e Tiny Bull Studios
+							</p>
+							<div class="data-time">14 out. 2022</div>
+							<div title="compartilhar" class="share">
+								<span class="material-symbols-outlined icons-google">share</span>
+							</div>
+						</div>
+					</div>
+					<div class="container-newnoticias">
+						<div class="imagem-noticia">
+							<div class="banner-categoria game">Games</div>
+							<img src="assets/image/more_news/News_overwath.webp" alt="Overwatch 2 alcança 25 milhões de jogadores em dez dias">
+						</div>
+						<div class="area-noticia">
+							<p class="titulo-noticia">
+								Overwatch 2 alcança 25 milhões de jogadores em dez dias
+							</p>
+							<p class="descricao-noticia">
+								Marca supera até mesmo o recorde do beta aberto do antecessor
+							</p>
+							<div class="data-time">14 out. 2022</div>
+							<div title="compartilhar" class="share">
+								<span class="material-symbols-outlined icons-google">share</span>
+							</div>
+						</div>
+					</div>
+					<div class="container-newnoticias">
+						<div class="imagem-noticia">
+							<div class="banner-categoria movie">Filmes</div>
+							<img src="assets/image/more_news/News_Robbie.webp" alt='Daniel Radcliffe homenageia Robbie Coltrane após morte do ator: "Era um homem amável"'>
+						</div>
+						<div class="area-noticia">
+							<p class="titulo-noticia">
+								Daniel Radcliffe homenageia Robbie Coltrane após morte do ator: "Era um homem amável"
+							</p>
+							<p class="descricao-noticia">
+								Intérprete do Hagrid morreu nesta sexta (14), aos 72 anos
+							</p>
+							<div class="data-time">14 de out. 2022</div>
+							<div title="compartilhar" class="share">
+								<span class="material-symbols-outlined icons-google">share</span>
+							</div>
+						</div>
+					</div>
+					<div class="container-newnoticias">
+						<div class="imagem-noticia">
+							<div class="banner-categoria game">Games</div>
+							<img src="assets/image/more_news/News_CMON.webp" alt='CMON Games lança miniaturas do Iron Maiden para Zombicide e mais'>
+						</div>
+						<div class="area-noticia">
+							<p class="titulo-noticia">
+								CMON Games lança miniaturas do Iron Maiden para Zombicide e mais
+							</p>
+							<p class="descricao-noticia">
+								Mascote da banda, Eddie promete tocar o terror nas suas noites de jogatina
+							</p>
+							<div class="data-time">14 de out. 2022</div>
+							<div title="compartilhar" class="share">
+								<span class="material-symbols-outlined icons-google">share</span>
+							</div>
+						</div>
+					</div>
+					<div class="container-newnoticias">
+						<div class="imagem-noticia">
+							<div class="banner-categoria serie">Séries e TV</div>
+							<img src="assets/image/more_news/News_Diana.webp" alt='Quinta temporada de The Crown ganha fotos com Diana, Charles e mais'>
+						</div>
+						<div class="area-noticia">
+							<p class="titulo-noticia">
+								Quinta temporada de The Crown ganha fotos com Diana, Charles e mais
+							</p>
+							<p class="descricao-noticia">
+								Série retorna em novembro, abordando uma nova década da monarquia britânica
+							</p>
+							<div class="data-time">14 de out. 2022</div>
+							<div title="compartilhar" class="share">
+								<span class="material-symbols-outlined icons-google">share</span>
+							</div>
+						</div>
+					</div>
+					<div class="container-newnoticias">
+						<div class="imagem-noticia">
+							<div class="banner-categoria movie">Filmes</div>
+							<img src="assets/image/more_news/news_mario.webp" alt="Filme de Super Mario Bros. ganha primeiro trailer fofinho e divertido">
+						</div>
+						<div class="area-noticia">
+							<p class="titulo-noticia">
+								Filme de Super Mario Bros. ganha primeiro trailer fofinho e divertido
+							</p>
+							<p class="descricao-noticia">
+								Animação chega aos cinemas brasileiros em março do ano que vem
+							</p>
+
+							<div class="data-time">06 out. 2022</div>
+							<div title="compartilhar" class="share">
+								<span class="material-symbols-outlined icons-google">share</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="container-newnoticias">
+						<div class="imagem-noticia">
+							<div class="banner-categoria movie">Filmes</div>
+							<img src="assets/image/more_news/news_7a24.webp" alt="Filme da A24 com Jennifer Lawrence, Causeway ganha trailer intenso">
+						</div>
+						<div class="area-noticia">
+							<p class="titulo-noticia">
+								Filme da A24 com Jennifer Lawrence, Causeway ganha trailer intenso
+							</p>
+							<p class="descricao-noticia">
+								Longa chega para streaming em 4 de novembro, pelo Apple TV+
+							</p>
+
+							<div class="data-time">06 out. 2022</div>
+							<div title="compartilhar" class="share">
+								<span class="material-symbols-outlined icons-google">share</span>
+							</div>
+						</div>
+					</div>
+					<div class="container-newnoticias">
+						<div class="imagem-noticia">
+							<div class="banner-categoria anime">Animes e Mangás</div>
+							<img src="assets/image/more_news/news_black.webp" alt="Filme de Black Clover ganha teaser e data de lançamento na Netflix">
+						</div>
+						<div class="area-noticia">
+							<p class="titulo-noticia">
+								Filme de Black Clover ganha teaser e data de lançamento na Netflix
+							</p>
+							<p class="descricao-noticia">
+								Longa será uma história original sobre o Rei Mago
+							</p>
+
+							<div class="data-time">06 out. 2022</div>
+							<div title="compartilhar" class="share">
+								<span class="material-symbols-outlined icons-google">share</span>
+							</div>
+						</div>
+					</div>
+					<div class="container-newnoticias">
+						<div class="imagem-noticia">
+							<div class="banner-categoria serie">Séries e TV</div>
+							<img src="assets/image/more_news/news_white.webp" alt="Segunda temporada de The White Lotus ganha trailer com novo elenco e mais drama">
+						</div>
+						<div class="area-noticia">
+							<p class="titulo-noticia">
+								Segunda temporada de The White Lotus ganha trailer com novo elenco e mais drama
+							</p>
+							<p class="descricao-noticia">
+								Série retorna dia 30, com exibição simultânea na HBO e HBO Max
+							</p>
+
+							<div class="data-time">06 out. 2022</div>
+							<div title="compartilhar" class="share">
+								<span class="material-symbols-outlined icons-google">share</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="container-newnoticias">
+						<div class="imagem-noticia">
+							<div class="banner-categoria game">Games</div>
+							<img src="assets/image/latest_news/rickAndMorty.webp" alt="Rick Sanchez já está disponível no MultiVersus; veja o vídeo de gameplay">
+						</div>
+						<div class="area-noticia">
+							<p class="titulo-noticia">
+								Rick Sanchez já está disponível no MultiVersus; veja o vídeo de gameplay
+							</p>
+							<p class="descricao-noticia">
+								O cientista é focado em um combate a longa distância
+							</p>
+
+							<div class="data-time">28 set. 2022</div>
+							<div title="compartilhar" class="share">
+								<span class="material-symbols-outlined icons-google">share</span>
+							</div>
+						</div>
+					</div>
+					<div class="container-newnoticias">
+						<div class="imagem-noticia">
+							<div class="banner-categoria anime">Animes e Mangás</div>
+							<img src="assets/image/more_news/news_manga.webp" alt="Ao Ashi: JBC anuncia o lançamento do mangá de futebol">
+						</div>
+						<div class="area-noticia">
+							<p class="titulo-noticia">
+								Ao Ashi: JBC anuncia o lançamento do mangá de futebol
+							</p>
+							<p class="descricao-noticia">
+								Em pleno 2022, ano de Copa do Mundo
+							</p>
+
+							<div class="data-time">28 set. 2022</div>
+							<div title="compartilhar" class="share">
+								<span class="material-symbols-outlined icons-google">share</span>
+							</div>
+						</div>
+					</div>
+					<div class="container-newnoticias">
+						<div class="imagem-noticia">
+							<div class="banner-categoria serie">Séries e TV</div>
+							<img src="assets/image/more_news/news_mulherhulk.webp" alt="Mulher-Hulk aparta briga de personagens obscuros da Marvel em cena do sétimo episódio">
+						</div>
+						<div class="area-noticia">
+							<p class="titulo-noticia">
+								Mulher-Hulk aparta briga de personagens obscuros da Marvel em cena do sétimo episódio
+							</p>
+							<p class="descricao-noticia">
+								Série vai ganhar um capítulo inédito amanhã (29) no Disney Plus
+							</p>
+
+							<div class="data-time">28 set. 2022</div>
+							<div title="compartilhar" class="share">
+								<span class="material-symbols-outlined icons-google">share</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="container-newnoticias">
+						<div class="imagem-noticia">
+							<div class="banner-categoria anime">Animes e Mangás</div>
+							<img src="assets/image/more_news/news_makoto.webp" alt="Próximo filme de Makoto Shinkai, Suzume no Tojimari, ganha novo trailer">
+						</div>
+						<div class="area-noticia">
+							<p class="titulo-noticia">
+								Próximo filme de Makoto Shinkai, Suzume no Tojimari, ganha novo trailer
+							</p>
+							<p class="descricao-noticia">
+								Produção chega aos cinemas brasileiros no início de 2023
+							</p>
+
+							<div class="data-time">28 set. 2022</div>
+							<div title="compartilhar" class="share">
+								<span class="material-symbols-outlined icons-google">share</span>
+							</div>
+						</div>
+					</div>
+					
+					<a href="https://jovemnerd.com.br/" class="botao-noticias" >
+						Ver mais notícias
+					</a>
+				</div>
+				<!-- fim noticias principais -->
+
+				<!-- inicio noticias lado direito -->
+				<aside class="area-conteudo-2">
+					<div class="container-lateral">
+						<header class="header-container-lateral">
+							<span>NerdOffice</span>
+							<a href="https://jovemnerd.com.br/nerdoffice/">Ver mais</a>
+						</header>
+						<div class="area-noticias-lateral">
+							<div class="ladinho">
+								<div class="container-img-ladinho">
+									<img src="assets/image/extra_content/extra_thelast.webp" alt="Trailer da série The Last of Us - A série da minha vida">
+								</div>
+								<div class="content-ladinho">
+									<span class="destaque-ladinho">NerdOffice S13E36</span>
+									<span class="">Trailer da série The Last of Us - A série da minha vida!</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container-lateral">
+						<header class="header-container-lateral">
+							<span>NerdPlayer</span>
+							<a href="https://jovemnerd.com.br/nerdplayer/">Ver mais</a>
+						</header>
+						<div class="area-noticias-lateral">
+							<div class="ladinho">
+								<div class="container-img-ladinho">
+									<img src="assets/image/extra_content/extra_spy.webp" alt="SpyParty - Confiando com outra inteligência!">
+								</div>
+								<div class="content-ladinho">
+									<span class="destaque-ladinho">NerdPlayer 628</span>
+									<span class="">SpyParty - Confiando com outra inteligência!</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container-lateral">
+						<header class="header-container-lateral">
+							<span>Sr. K</span>
+							<a href="https://jovemnerd.com.br/sr-k/">Ver mais</a>
+						</header>
+						<div class="area-noticias-lateral">
+							<div class="ladinho">
+								<div class="container-img-ladinho">
+									<img src="assets/image/extra_content/extra_playlist.webp" alt="Playlist para chocar no churrasco!">
+								</div>
+								<div class="content-ladinho">
+									<span class="destaque-ladinho">Responde</span>
+									<span class="">Playlist para chocar no churrasco!</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container-lateral">
+						<header class="header-container-lateral">
+							<span>Nerdologia</span>
+							<a href="https://jovemnerd.com.br/nerdologia/">Ver mais</a>
+						</header>
+						<div class="area-noticias-lateral">
+							<div class="ladinho">
+								<div class="container-img-ladinho">
+									<img src="assets/image/extra_content/extra_pao.webp" alt="Como seria o pão da Terra Média feito por Galadriel?">
+								</div>
+								<div class="content-ladinho">
+									<span class="destaque-ladinho">Nerdologia 715</span>
+									<span class="">Como seria o pão da Terra Média feito por Galadriel?</span>
+
+								</div>
+							</div>
+							<div class="ladinho">
+								<div class="container-img-ladinho">
+									<img src="assets/image/extra_content/extra_fernao.webp" alt="Fernão de Magalhães e a viagem ao redor do mundo">
+								</div>
+								<div class="content-ladinho">
+									<span class="destaque-ladinho">Nerdologia 713</span>
+									<span class="">Fernão de Magalhães e a viagem ao redor do mundo</span>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</aside>
+				<!-- fim noticias lado direito -->
+			</div>
+		</div>
+		<div class="faixa" >
+			<div class="nerd-cast-title">
+				<div>
+					<h3>Críticas e Reviews</h3>
+				</div>
+			</div>
+			<div class="container-criticas">
+				<div class="card-criticas" >
+					<img src="assets/image/criticas/criticas_mort.png" alt="Morte, Morte, Morte">
+					<span>Morte, Morte, Morte | Crítica</span>
+				</div>
+				<div class="card-criticas" >
+					<img src="assets/image/criticas/criticas_dome.png" alt="Dome Keeper">
+					<span>Dome Keeper | Review</span>
+				</div>
+				<div class="card-criticas" >
+					<img src="assets/image/criticas/criticas_esquadrao.png" alt="Esquadrão 51 contra os Discos Voadores">
+					<span>Esquadrão 51 contra os Discos Voadores | Review</span>
+				</div>
+				<div class="card-criticas" >
+					<img src="assets/image/criticas/criticas_noplace.png" alt="No Place for Bravery">
+					<span>No Place for Bravery | Review</span>
+				</div>
+				<div class="card-criticas" >
+					<img src="assets/image/criticas/criticas_mulher.png" alt="A Mulher Rei">
+					<span>A Mulher Rei | Crítica</span>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer id="footer">
+		<div class="logo ">
+			<a href="/" title="logo"> </a>
+		</div>
+		<div class="info-footer">
+			<section>
+				<h3 class="title">Sobre</h3>
+				<ul>
+					<li>Quem somos</li>
+					<li>Fale conosco</li>
+					<li>Anuncie</li>
+					<li>Politica de Privacidade</li>
+					<li>Programa de Integridade</li>
+				</ul>
+			</section>
+			<section class="desktop">
+				<h3 class="title">NerdBunker</h3>
+				<ul>
+					<li>Filmes</li>
+					<li>Séries e TV</li>
+					<li>Games</li>
+					<li>HQs e Livros</li>
+					<li>Animes e Mangás</li>
+					<li>Ciência e Tecnologia</li>
+					<li>Etc</li>
+				</ul>
+			</section>
+			<section class="desktop">
+				<h3 class="title">Programas</h3>
+				<ul>
+					<li>DesenKaixa</li>
+					<li>NerdCast</li>
+					<li>NerdOffice</li>
+					<li>NerdPlayer</li>
+					<li>Nerdologia</li>
+					<li>Sr. K</li>
+				</ul>
+			</section>
+			<section>
+				<h3 class="title">Redes Sociais</h3>
+				<ul>
+					<li>Facebook</li>
+					<li>Twitter - Jovem Nerd</li>
+					<li>Twitter - Azaghâl</li>
+					<li>Instagram - Jovem Nerd</li>
+					<li>Instagram - Azaghâl</li>
+					<li>YouTube</li>
+				</ul>
+			</section>
+			<section>
+				<h3 class="title">Nosso APP</h3>
+
+				<ul>
+					<li>
+						<img src="assets/image/playstore.png" alt="PlayStore">
+					</li>
+					<li>
+						<img src="assets/image/iso.png" alt="IOS">
+					</li>
+				</ul>
+			</section>
+		</div>
+		<div class="copyright">
+			<small>
+				© 2002 - 2022 Jovem Nerd | Pazos, Ottoni & Cia<br>
+				Todas as imagens de filmes, séries e etc são marcas registradas dos seus respectivos proprietários.
+			</small>
+		</div>
+	</footer>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
