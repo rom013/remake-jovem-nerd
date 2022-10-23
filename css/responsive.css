@@ -1,3 +1,12 @@
+@media only screen and (min-width: 1300px){
+	#main{
+		margin: 64px auto;
+	}
+	.info-footer{
+		margin: 0 auto;
+		width: 1300px;
+	}
+}
 @media only screen and (max-width: 1200px){
 	#main .container-news{
 		padding: 50px 40px;
@@ -94,6 +103,7 @@
 	}
 	.container-criticas{
 		margin: 0 24px;
+		overflow: auto;
 	}
 	.nerd-cast-title a{
 		margin-right: 24px;
@@ -101,11 +111,18 @@
 	.info-footer{
 		flex-wrap: wrap;
 	}
+	.card-criticas{
+		min-width: 200px;
+	}
 }
 
 
 /* mobile */
 @media only screen and (max-width: 580px){
+	body.dark {
+		background: #181818;
+		background-image: none;
+	}
 	body{
 		background: #F2F2F2;
 	}
@@ -144,6 +161,9 @@
 		width: 100%;
 		height: auto;
 	}
+	/* .titulo-card>span{
+		color: #000;
+	} */
 	.ultimas-noticias .card img{
 		height: auto;
 		border-radius: 8px;
@@ -171,6 +191,7 @@
 		font-weight: 800;
 		height: auto;
 		font-family: "Lato", sans-serif;
+		margin-top: 16px;
 	}
 	.em-alta-faixa{
 		display: block;
@@ -200,14 +221,8 @@
 	.banner-categoria{
 		border-top-right-radius: 0;
 	}
-	.container-criticas{
-		overflow: auto;
-	}
 	.nerd-cast-title h3{
 		font-size: 20px;
-	}
-	.card-criticas{
-		min-width: 160px;
 	}
 
 	#footer{

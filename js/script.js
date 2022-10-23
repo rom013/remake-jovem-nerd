@@ -38,7 +38,7 @@ const menuMobile = document.querySelector(".main-header")
 btnMenu.addEventListener("click", () => {
     const active = btnMenu.classList.toggle("active")
     if (active) {
-        console.log("ok");
+        //insertAdjacentHTML adiciona tags antes ou depois de outra tag já existente no html
         menuMobile.insertAdjacentHTML("afterend", `
             <div class="menu-mobile">
                 <header>
@@ -77,8 +77,8 @@ btnMenu.addEventListener("click", () => {
                         <li>
                             <a href="#">Anuncie</a>
                         </li>
-                        <button class="btn-dark-mode" id="btn-dark-mode">
-                            <span class="material-symbols-outlined">light_mode</span>
+                        <button class="btn-dark-mode" id="btn-dark-mode" onClick="themeMode()">
+                            <span class="material-symbols-outlined">dark_mode</span>
                         </button>
                     </ul>
                 </section>
@@ -95,8 +95,27 @@ btnMenu.addEventListener("click", () => {
 
 const btnActiveDarkMode = document.querySelector(".btn-dark-mode")
 
-btnActiveDarkMode.addEventListener("click", function(){
-    document.body.classList.toggle("dark")
-})
+btnActiveDarkMode.addEventListener("click", themeMode)//Evento de click, chama a função themeMode
+
+
+function themeMode(){
+    document.body.classList.toggle("dark")//Verifica se já existe uma class dark, se existir a função toggle remove ela caso contrario ela adciona a class
+
+    let iconDarkOrLight = [...document.querySelectorAll(".btn-dark-mode span")]  
+
+    /* 
+        coleta todas as DOMs com o seletor ".btn-dark-mode span", a função querySelectorAll retorna um NodeList.
+        Depois disso, espalhei os valores do NodeList dentro de uma nova lista ([...valor]) e guardei em uma variavel
+    */
+
+    iconDarkOrLight.forEach((iconDarkOrLightReturn)=>{ //O forEach percorre todos os valores de uma lista (array) e retorna uma lista nova
+        if(iconDarkOrLightReturn.textContent == "dark_mode"){
+            iconDarkOrLightReturn.textContent = "light_mode"
+        }
+        else{
+            iconDarkOrLightReturn.textContent = "dark_mode"
+        }
+    })
+}
 
 /* end - dark mode */

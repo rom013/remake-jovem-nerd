@@ -1,4 +1,4 @@
-.dark #main, .dark .em-alta, .dark .titulo-categorias{
+.dark body, .dark #main, .dark .em-alta, .dark .titulo-categorias, .dark .ultimas-noticias{
     background: #181818;
     color: #fff;
     transition: .7s;
@@ -34,4 +34,10 @@
 
 .dark .descricao, .dark .descricao-noticia{
     color: #989898;
+}
+
+@media only screen and (max-width: 580px){
+    .dark .titulo-card>span{
+        color: #ffffff;
+    }
 }
