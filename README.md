@@ -36,7 +36,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
   <img alt="rocketpay" src="assets/image/Capa.png" width="80%">
 </p>
 
-Projeto desenvolvido para o trabalho de programação web. O objetivo desse trabalho era recriar o layout do site de notícias Jovem Nerd e depois criar um site utilizando apenas HTML, CSS e JS.
+Projeto desenvolvido para o trabalho de programação web. O objetivo desse trabalho era recriar o layout do site de notícias Jovem Nerd e depois desenvolver um site utilizando apenas HTML, CSS e JS.
 
 ## 🔖 Layout
 
@@ -44,4 +44,4 @@ Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figm
 
 ---
 
-Feito com ♥ by Romullo - rom013
+Feito com ♥ by Romullo (rom013), Lucas Moretti e Lucas Fischer
